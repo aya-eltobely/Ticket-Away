@@ -1,0 +1,339 @@
+<!doctype HTML>
+<html>
+  <head  lang="en">
+     <title> TICKETAWAY</title>
+     <meta name="viewport" content="width=divicee-width;initinal-scale=1.0">
+     <link rel = "icon" href =  "images/train-ticket-icon-cartoon-style-vector-24754004.jpg"  type = "image/x-icon"> 
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel = "icon" href =  "train-ticket-icon-cartoon-style-vector-24754004.jpg"  type = "image/x-icon">   
+     <link rel="StyleSheet" href="css/styles.css" />
+     <link rel="stylesheet" type="text/css" href="css/slider.css">
+     <link rel="StyleSheet" href="css/homeStyle.css" />
+    </head>
+    <body>
+    
+<!-- navbar  -->
+
+        
+        
+<section class=" bg-dark">
+            
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+
+          <div class="container-fluid ">
+              <a class="navbar-brand" href="#">
+                  <img class="logo" src="images/logo.jpeg" >
+              </a>
+
+              <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation" >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                      <a class="nav-link" href="index.html">
+                          Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="profile.php">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="registration.html">Sign Up</a>
+                        </li>
+                      </ul>
+              
+                      <div class="btn-group" style="float: right">
+              
+                        <button type="button" class="btn btn-dark  dropdown-toggle linkin" data-toggle="dropdown"><span class="spinner-grow text-warning spinner-grow-sm"></span>booking</button>
+              
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item linkin" href="#aday"><span class="badge badge-dark ">day</span> booking</a>
+                          <a class="dropdown-item linkin" href="monthBooking.html"><span class="badge badge-dark">month</span> booking</a>
+                        </div>
+                    
+                      </div>   
+                      
+              </div>
+          </div>
+      </nav>
+
+ 
+  
+</section>
+        
+ <!-- Container (Contact Section) -->
+        
+        
+ <div class="container-fluid"  style="margin-bottom: 100px;margin-top: 100px;">
+           
+  <form id="aday" style="color: black" onsubmit="moo()" action="monthBooking.php" target="_self" method="post" autocomplete="off" class=" form1 p-3" >
+  
+    <fieldset style="border-radius: 20px;border-color: violet;">
+    
+      <legend style="font-size: 20px;font-family: monospace;"><!--<img src="tick.png" alt="ticketway" title="ticketaway" style="width: 300px;height:50px ;border-top-left-radius: 5px;border-top-right-radius: 5px;">-->   Month_Ticket</legend>
+      
+      <div class="w3-container">
+      
+        <div class="w3-container"style="width: 100%;text-align: center;margin: 24px 0 12px 0;">
+
+          <img src="images/metro3.png" style="width: 60%;height: 200px;border-top-left-radius: 100px;border-top-right-radius: 100px" alt="ticketaway" title="ticketaway"><br><br>
+          
+          <div style="font-family:'Lucida Handwriting',Cursive;font-size: 30px;font-weight: bold;text-shadow: 4px 2px 2px lightblue;">ticketaway
+             <img src="images/train-ticket-icon-cartoon-style-vector-24754004.jpg" alt="ticket" style="width: 50px;height:20px">
+          </div>
+
+        </div>
+        <br>
+
+        <label style="margin-left: 35px; font-size: 18px; cursor: pointer; margin-bottom: 20px; margin-top: 15px;">
+
+          <input type="radio" name="chose_vechial" required >
+          <span> Metro </span>
+
+        </label>
+
+        <label style="margin-left: 90px; font-size: 18px; cursor: pointer;" >
+
+          <input type="radio" name="chose_vechial" required>
+          <span>Train</span>
+
+        </label>
+
+        <div class="row ">
+          <input type="text" id="name" class="input m-auto col-lg-3 col-md-3 col-sm-5 col-10" placeholder=" &#128100 your name" 
+                            name="name2" required> 
+          <input type="text" id="id" placeholder=" &#127380 your id" class="input m-auto col-lg-3 col-md-3 col-sm-5 col-10 " pattern="[0-9]{14}" 
+                            name="id2" required>
+          <input type="tel" id="phone" class="input m-auto col-lg-3 col-md-3 col-sm-5 col-10 " placeholder=" &#128222 phone" pattern="[0]{1}[1]{1}[0-9]{9}" 
+                            name="phone2"required> 
+        </div>
+
+        <!-- <div class="row ">
+        
+          <p id="nameA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10 invisible">Can't be empty</p>
+          <p id="idA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10  invisible">Enter correct Id Number</p>
+          <p id="phoneA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10  invisible">Enter correct Phone Number</p>
+
+        
+        </div> -->
+   
+          
+        <div class="row"  style="margin-top: 15px;">
+
+          <div class="autocomplete m-auto col-lg-3 col-md-3 col-sm-5 col-11 " style="color: black">
+            <!--<span id="error">col-lg-4 col-md-3 col-sm-6 col-10</span>-->
+            <input class="station " id="st1" type="text"  placeholder="&#128649 current station" name="st12" required>
+          </div>
+          
+          <div class="autocomplete m-auto col-lg-3 col-md-3 col-sm-5 col-11 " style="color: black">
+            <input class="station " id="st2" type="text"  placeholder="&#128649 destination station" name="st22" required>
+          </div>
+
+          <input style="color: gray;" type="date" min="2000-12-02" id="date"  class="date m-auto col-lg-3 col-md-3 col-sm-6 col-10 " name="date2" required>
+
+        </div>
+
+      <!-- <div class="row ">
+        
+        <p id="fromA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10 invisible">Enter valid station</p>
+        <p id="toA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10  invisible">Enter valid station</p>
+        <p id="dateA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10  invisible">Can't be empty</p>
+
+      
+      </div> -->
+
+      <div class="row" style="margin-top: 15px;">
+       
+       <select id="months"   class="input m-auto col-lg-3 col-md-3 col-sm-4 col-10 " name="months2" required>
+          <option value="" disabled selected >Ticket duration</option>
+          <option value="one month">one month</option>
+          <option value="3 months">3 months</option>
+          <option value="6 months">6 months</option>
+          <option value="one year">one year</option>
+        </select>
+        <input type="number" id="tickets" name="tickets2" required placeholder=" &#128106 number of passengers" min="1" max="5" class="input m-auto col-lg-3 col-md-3 col-sm-4 col-10 ">
+        <!-- <select id="pay" name="pay"  class="input col-lg-3 col-md-3 col-sm-4 col-10 " required>
+          <option value="" disabled selected  style="color: rgba(0, 0, 0, 0.7);">payment with</option>
+          <option data-valu="images/visa.png" value="3 months" style="background-image: url(images/visa.png);"><i class="fa fa-cc-visa"></i>visa</option>
+          <option data-valu="images/mastercard.png" value="6 months" style="background-image: url(images/mastercard.png);">mastercard</option>
+          <option data-valu="images/vd.jpeg" value="one year" style="background-image: url(images/vodafone.png);">vodafone</option>
+        </select> -->
+      </div>
+
+      <div class="row m-auto">
+
+        <div class=" inputPay" aria-required="true" style="margin-top: 40px; margin-left: 40px;">
+            
+          <label>
+            <input type="radio" name="gender" value="male" required>
+            <img src="images/visa.png" class="clickimg"  onclick="showPay()"     alt="" style="width: 50px;height: 30px;">
+          </label>
+        
+          <label style="margin-left: 15px;">
+            <input type="radio" name="gender" value="female">
+            <img src="images/mastercard.png" class="clickimg"  onclick="showPay()"     alt="" style="width: 50px;height: 30px;">
+          </label>
+        
+          <label style="margin-left: 15px;">
+            <input type="radio" name="gender" value="other">
+            <img src="images/vd.jpeg" class="clickimg"  onclick="showPay()"     alt="" style="width: 50px;height: 30px;">
+          </label>
+        
+        </div>
+
+        <!--Payment-->
+
+        <div class="m-auto col-lg-6 col-md-6 col-sm-10 col-10 dform m-auto" id="ppay" style="margin-top: 40px; margin-left: 145px;">
+
+          <div  class="payment-form div-paymnt">
+            <img src="" style="width: 20%;">
+          </div>
+    
+          <div class="payment-form">
+            <input id="nameP" type="text" name="nameP2" placeholder="CardHolder Name" required>
+          </div>
+    
+          <div class="payment-form">
+            <input id="cardnum" type="text" name="cardnum2" placeholder="Card Number" data-mask="0000 0000 0000 0000" required>
+          </div>
+    
+          <div class="payment-form">
+            <input id="expiryDate" type="text" name="expiryDate2" placeholder="MM / YY" data-mask="00 / 00" required>
+          </div>
+    
+          <div class="payment-form">
+            <input id="cvc" type="text" name="cvc2" placeholder="CVC" data-mask="000" required>
+          </div>
+        </div> 
+  
+      
+  
+    </div>
+
+    
+<!-- 
+      <div class="row ">
+        <p id="monthA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10 mx-auto invisible">Can't be empty</p>
+        <p id="ticketsA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10 mx-auto invisible">Must less than 6 passengers</p>
+        <p id="payA" class="inputE col-lg-3 col-md-3 col-sm-6 col-10  mx-auto invisible">Can't be empty</p>
+
+      
+      </div> -->
+      
+      </div><br>
+
+        
+  
+        <!-- <input type="submit" value="next"> -->
+        <button type="submit" id="mainBtn" class="btn-add">Next</button>
+       
+        <!-- <button type="button" id="information" onclick="displayTicketInfo()" class="btn-add">Next</button> -->
+
+        <input type="reset" value="cancel">
+
+      
+      </div>
+         
+    </fieldset>
+     
+  </form>
+       
+</div>
+
+
+ <!--  payment  ----
+
+ <section id="paymentForm" class="payment m-auto ">
+
+
+  <div class="dform m-auto ">  
+      
+      <form >
+
+
+            <div class="payment-form div-paymnt">
+              <img src="" style="width: 20%;">
+            </div>
+
+            <div class="payment-form">
+              <input id="nameP" type="text" name="name" placeholder="CardHolder Name" required>
+          </div>
+
+          <div class="payment-form">
+            <input id="cardnum" type="text" name="card num" placeholder="Card Number" data-mask="0000 0000 0000 0000" required>
+        </div>
+
+          <div class="payment-form">
+              <input id="expiryDate" type="text" name="expiry date" placeholder="MM / YY" data-mask="00 / 00" required>
+          </div>
+
+          <div class="payment-form">
+              <input id="cvc" type="text" name="cvc" placeholder="CVC" data-mask="000" required>
+          </div>
+
+        <!----  <div class="payment-form">
+              <input id="zip" type="text" name="zip" placeholder="ZIP" data-mask="00000" required>
+          </div> --
+
+          <div class="div-pay">
+            <!-- <button type="button" class="pay-btn" id="payBtn" onclick="hidePaymentMo()"> --
+            <button type="submit" class="pay-btn" id="payBtn">
+
+                Confirm
+            </button>
+
+            <button type="reset" class="pay-btn cancle-pay">
+              Cancle
+            </button>
+          </div> 
+
+        
+      </form>
+          
+  </div> 
+
+</section>
+
+-->
+
+<!--Footer-->
+<footer class="footer py-4 text-center">
+  <p>
+   Copy Right 2021 © By Team All Rights Reserved
+  </p>
+</footer>
+
+
+   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>  
+
+   <script src="js/scriptHome.js" ></script>
+   <!-- <script src="js/ticketMonth.js"></script> -->
+
+         
+ </body>
+
+
+</html>
